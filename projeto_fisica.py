@@ -1,7 +1,28 @@
 import math
 c = (3*10^8)
 
-#Bm=(Em/c)
+#Bm = (Em/c)
+
+#calculos 2
+
+#if y == "f":
+#    lambda = (c/f)
+#    k = (2*math.pi/lambda)
+#    ω = (2*math.pi*f)
+#if y == "lambda" or y == "λ":
+#   f = (c/lambda)
+#   k = (2*math.pi/lambda)
+#   ω = (2*math.pi*f)
+#if y == "k":
+#   lambda = (c/f)
+#   f = (c/lambda)
+#   k = (2*math.pi/lambda)
+#   ω = (2*math.pi*f)
+#if y == "ω" or y == "Frequência Angular":
+#   f = (ω/(2*math.pi))
+#   k = (2*math.pi/lambda)
+#   lambda = (c/f) 
+    
 
 
 def info():
