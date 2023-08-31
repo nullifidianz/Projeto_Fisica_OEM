@@ -46,8 +46,8 @@ def calculos1():
         print("Opção Inválida.")
 
 def calculos2():
-    print("Calculos a partir de f, lambda, k ou ω (Frequência Angular)")
-    y = input("Escolha a grandeza a partir de f, λ (lambda), k ou ω (Frequência Angular)")
+    print("Calculos a partir de f, λ (lambda), k ou ω (Frequência Angular)")
+    y = input("Escolha a grandeza a partir de f, λ (lambda), k ou ω (Frequência Angular): ")
 
     if y=="f":
         print("Teste f")
