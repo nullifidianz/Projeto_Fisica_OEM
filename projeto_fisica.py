@@ -6,7 +6,7 @@ c = (3*10^8)
 
 def info():
     print("Programa para o estudo das ondas eletromagnéticas")
-    print("Este programa procura realziar conversões entre diferentes unidades e calcular valores como:\nfrequência\ncomprimento de onda\nnúmero de onda\nfrequência angular\namplitude do campo elétrico\namplitude do campo magnético\nintensidade")
+    print("Este programa procura realziar conversões entre diferentes unidades e calcular valores como:\n*frequência\n*comprimento de onda\n*número de onda\n*frequência angular\n*amplitude do campo elétrico\n*amplitude do campo magnético\n*intensidade")
     print()
     print("Feito por: João Paulo Paggi Zuanon Dias - RA: 22.222.058-4")
     print("Feito por: Matheus - RA: xx.xxx.xxx-x")
@@ -22,7 +22,7 @@ def menu():
 
 def calculos1():
     print("Calculos a partir de Em, Bm e I")
-    x = input("Escolha a grandeza Em / Bm / I")
+    x = input("Escolha a grandeza Em / Bm / I: ")
 
     if x=="Em":
         Em = float(input("informe a amplitude do Campo Elétrico (Em) em V/m"))
@@ -45,10 +45,23 @@ def calculos1():
     else:
         print("Opção Inválida.")
 
+def calculos2():
+    print("teste calc2")
 
 def main():
     info()
-    menu()
-
+    while True:
+        menu()
+        escolha = int(input("Digite a escolha desejada: "))
+        if escolha == 1:
+            calculos1()
+        elif escolha == 2:
+            calculos2()
+        elif escolha == 3:
+            print("Finalizando programa.")
+            break
+        else:
+            print("escolha inválida, por favor digite novamente.")
+        
 if __name__ == "__main__":
     main()
