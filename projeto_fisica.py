@@ -71,6 +71,8 @@ def calculos2():
     y = input("Escolha a grandeza a partir de f, λ (lambda), k ou ω (Frequência Angular): ")
 
     if y=="f":
+        f = float(input("Informe a frequência (f): "))
+
         print("Teste f")
     
     elif y=="lambda" or y=="λ":
