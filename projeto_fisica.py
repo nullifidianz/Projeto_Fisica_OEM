@@ -1,30 +1,6 @@
 import math
 c = (3*10^8)
 
-#Bm = (Em/c)
-
-#calculos 2
-
-#if y == "f":
-#    lambda = (c/f)
-#    k = (2*math.pi/lambda)
-#    ω = (2*math.pi*f)
-#if y == "lambda" or y == "λ":
-#   f = (c/lambda)
-#   k = (2*math.pi/lambda)
-#   ω = (2*math.pi*f)
-#if y == "k":
-#   lambda = (c/f)
-#   f = (c/lambda)
-#   k = (2*math.pi/lambda)
-#   ω = (2*math.pi*f)
-#if y == "ω" or y == "Frequência Angular":
-#   f = (ω/(2*math.pi))
-#   k = (2*math.pi/lambda)
-#   lambda = (c/f) 
-    
-
-
 def info():
     print("Programa para o estudo das ondas eletromagnéticas")
     print("Este programa procura realziar conversões entre diferentes unidades e calcular valores como:\n*frequência\n*comprimento de onda\n*número de onda\n*frequência angular\n*amplitude do campo elétrico\n*amplitude do campo magnético\n*intensidade")
@@ -72,17 +48,37 @@ def calculos2():
 
     if y=="f":
         f = float(input("Informe a frequência (f): "))
-
-        print("Teste f")
-    
+        lamb = (c/f)
+        k = (2*math.pi/lamb)
+        ω = (2*math.pi*f)
+        print(f"Comprimento de onda (λ): {lamb:.3e} m")
+        print(f"Número de onda (k): {k:.3e} rad/m")
+        print(f"Frequência angular (ω): {ω:.3e} rad/s") 
     elif y=="lambda" or y=="λ":
-        print("teste lambda")
-    
+        lamb = float(input("Informe o comprimento de Onda (λ) em metros: "))
+        f = (c/lamb)
+        k = (2*math.pi/lamb)
+        ω = (2*math.pi*f)
+        print(f"Frequência (f): {f:.3e} Hz")
+        print(f"Número de onda (k): {k:.3e} rad/m")
+        print(f"Frequência angular (ω): {ω:.3e} rad/s")
     elif y=="k":
-        print("teste k")
+        k = float(input("Informe o número de onda (k) em rad/m: "))
+        lamb = (2*math.pi/k )  # Calcula o comprimento de onda em metros
+        f = (c/lamb)     # Calcula a frequência em Hz
+        ω = (c*k)     # Calcula a frequência angular em rad/s
+        print(f"Frequência (f): {f:.3e} Hz")
+        print(f"Comprimento de onda (λ): {lamb:.3e} m")
+        print(f"Frequência angular (ω): {ω:.3e} rad/s")
     
     elif y=="ω" or y=="Freqência Angular":
-        print("teste Frequência Angular")
+        ω = float(input("Informe a frequência angular (ω) em rad/s: "))
+        f = (ω/(2*math.pi))  
+        lamb = (c/f)    
+        k = (2*math.pi/lamb)     
+        print(f"Frequência (f): {f:.3e} Hz")
+        print(f"Comprimento de onda (λ): {lamb:.3e} m")
+        print(f"Número de onda (k): {k:.3e} rad/m")
     else:
         print("Opção Inválida.")
 
