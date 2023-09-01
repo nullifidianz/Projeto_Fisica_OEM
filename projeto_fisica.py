@@ -2,7 +2,8 @@ import math
 c = (3*10^8)
 
 def info():
-    print("Programa para o estudo das ondas eletromagnéticas")
+    print("Programa para o estudo das ondas eletromagnéticas proposto pela matéria CF3121 - Tópicos de Optica e Física Moderna")
+    print()
     print("Este programa procura realziar conversões entre diferentes unidades e calcular valores como:\n*frequência\n*comprimento de onda\n*número de onda\n*frequência angular\n*amplitude do campo elétrico\n*amplitude do campo magnético\n*intensidade")
     print()
     print("Feito por: João Paulo Paggi Zuanon Dias - RA: 22.222.058-4")
@@ -64,9 +65,9 @@ def calculos2():
         print(f"Frequência angular (ω): {ω:.3e} rad/s")
     elif y=="k":
         k = float(input("Informe o número de onda (k) em rad/m: "))
-        lamb = (2*math.pi/k )  # Calcula o comprimento de onda em metros
-        f = (c/lamb)     # Calcula a frequência em Hz
-        ω = (c*k)     # Calcula a frequência angular em rad/s
+        lamb = (2*math.pi/k )  
+        f = (c/lamb)     
+        ω = (c*k)   
         print(f"Frequência (f): {f:.3e} Hz")
         print(f"Comprimento de onda (λ): {lamb:.3e} m")
         print(f"Frequência angular (ω): {ω:.3e} rad/s")
