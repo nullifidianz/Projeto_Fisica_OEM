@@ -72,7 +72,7 @@ def calculos2():
         print(f"Comprimento de onda (λ): {lamb:.3e} m")
         print(f"Frequência angular (ω): {ω:.3e} rad/s")
     
-    elif y=="ω" or y=="Freqência Angular":
+    elif y=="ω" or y=="Frequência Angular":
         ω = float(input("Informe a frequência angular (ω) em rad/s: "))
         f = (ω/(2*math.pi))  
         lamb = (c/f)    
