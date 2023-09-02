@@ -29,16 +29,16 @@ def calculos1():
         print(f"A amplitude do Campo Magnético (Bm): {Bm:.3e} T")
         print(f"Intensidade (I): {I:.3e} W/m^2")
     elif x=="Bm":
-        Bm = float(input("Informe a amplitude do Campo Magnético (Bm) em V/m: "))
+        Bm = float(input("Informe a amplitude do Campo Magnético (Bm) em T: "))
         Em = (Bm*c)
         I = (0.5*Em*Bm)
-        print(f"A amplitude do Campo Elétrico (Em): {Em:.3e} T")
+        print(f"A amplitude do Campo Elétrico (Em): {Em:.3e} V/m")
         print(f"Intensidade (I): {I:.3e} W/m^2")
     elif x=="i":
         I = float(input("Informe a intensidade (I) em W/m^2: "))
         Em = math.sqrt(2*I)
         Bm = (Em/c)
-        print(f"A amplitude do Campo Elétrico (Em): {Em:.3e} T")
+        print(f"A amplitude do Campo Elétrico (Em): {Em:.3e} V/m")
         print(f"A amplitude do Campo Magnético (Bm): {Bm:.3e} T")
     else:
         print("Opção Inválida.")
