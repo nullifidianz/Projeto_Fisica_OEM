@@ -7,8 +7,8 @@ def info():
     print("Este programa procura realziar conversões entre diferentes unidades e calcular valores como:\n*frequência\n*comprimento de onda\n*número de onda\n*frequência angular\n*amplitude do campo elétrico\n*amplitude do campo magnético\n*intensidade")
     print()
     print("Feito por: João Paulo Paggi Zuanon Dias - RA: 22.222.058-4")
-    print("Feito por: Matheus - RA: xx.xxx.xxx-x")
-    print("Feito por: Leandro - RA: xx.xxx.xxx-x")
+    print("Feito por: Mateus Rocha - RA: 22.222.022-2")
+    print("Feito por: Leandro de Brito Alencar - RA: 22.222.034-5")
     print()
     print("***************************************************************",)
 
