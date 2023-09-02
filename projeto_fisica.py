@@ -1,5 +1,5 @@
 import math
-c = (3*10^8)
+c = 3*10**8
 
 def info():
     print("Programa para o estudo das ondas eletromagnéticas proposto pela matéria CF3121 - Tópicos de Optica e Física Moderna")
