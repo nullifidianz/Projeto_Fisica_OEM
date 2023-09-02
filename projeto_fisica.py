@@ -4,7 +4,7 @@ c = 3*10**8
 def info():
     print("Programa para o estudo das ondas eletromagnéticas proposto pela matéria CF3121 - Tópicos de Optica e Física Moderna")
     print()
-    print("Este programa procura realziar conversões entre diferentes unidades e calcular valores como:\n*frequência\n*comprimento de onda\n*número de onda\n*frequência angular\n*amplitude do campo elétrico\n*amplitude do campo magnético\n*intensidade")
+    print("Este programa procura realizar conversões entre diferentes unidades e calcular valores como:\n*frequência\n*comprimento de onda\n*número de onda\n*frequência angular\n*amplitude do campo elétrico\n*amplitude do campo magnético\n*intensidade")
     print()
     print("Feito por: João Paulo Paggi Zuanon Dias - RA: 22.222.058-4")
     print("Feito por: Mateus Rocha - RA: 22.222.022-2")
