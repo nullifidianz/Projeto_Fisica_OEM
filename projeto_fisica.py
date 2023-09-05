@@ -1,6 +1,7 @@
 import math
-c = 3*10**8
-
+c = (3*10**8)
+u0 = (4*math.pi*10**-7)
+e0 = (8.854*10**-12)
 def info():
     print("Programa para o estudo das ondas eletromagnéticas proposto pela matéria CF3121 - Tópicos de Optica e Física Moderna")
     print()
@@ -25,19 +26,19 @@ def calculos1():
     if x=="Em":
         Em = float(input("informe a amplitude do Campo Elétrico (Em) em V/m: "))
         Bm = (Em/c)
-        I = (0.5*Em*Bm)
+        I = (Em**2/(2*c*u0))
         print(f"A amplitude do Campo Magnético (Bm): {Bm:.3e} T")
         print(f"Intensidade (I): {I:.3e} W/m^2")
     elif x=="Bm":
         Bm = float(input("Informe a amplitude do Campo Magnético (Bm) em T: "))
         Em = (Bm*c)
-        I = (0.5*Em*Bm)
+        I = (Em**2/(2*c*u0))
         print(f"A amplitude do Campo Elétrico (Em): {Em:.3e} V/m")
         print(f"Intensidade (I): {I:.3e} W/m^2")
-    elif x=="i":
+    elif x=="I":
         I = float(input("Informe a intensidade (I) em W/m^2: "))
-        Em = math.sqrt(2*I)
-        Bm = (Em/c)
+        Em = math.sqrt(2*I/(c*e0))
+        Bm = math.sqrt((2*u0*I)/c)
         print(f"A amplitude do Campo Elétrico (Em): {Em:.3e} V/m")
         print(f"A amplitude do Campo Magnético (Bm): {Bm:.3e} T")
     else:
@@ -45,7 +46,7 @@ def calculos1():
 
 def calculos2():
     print("Calculos a partir de f, λ (lambda), k ou ω (Frequência Angular)")
-    y = input("Escolha a grandeza a partir de f, λ (lambda), k ou ω (Frequência Angular): ")
+    y = input("Escolha a grandeza a partir de f / λ (lambda) / k / ω (Frequência Angular): ")
 
     if y=="f":
         f = float(input("Informe a frequência (f): "))
